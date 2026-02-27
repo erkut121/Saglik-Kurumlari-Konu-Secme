@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sağlık Kurumları İşletmeciliği Sunum Programı</title>
+    <style>
+        body { font-family: 'Segoe UI', Tahoma, sans-serif; background-color: #f0f4f8; margin: 0; padding: 40px 20px; }
+        .main-layout { display: flex; gap: 30px; justify-content: center; align-items: flex-start; flex-wrap: wrap; }
+        
+        /* TABLO ALANI */
+        .container { background: #ffffff; padding: 25px; border-radius: 12px; box-shadow: 0 10px 25px rgba(0,0,0,0.08); min-width: 750px; }
+        
+        /* SAĞ PANEL: İLETİŞİM FORMU */
+        .contact-panel { 
+            background: #ffffff; padding: 25px; border-radius: 12px; 
+            box-shadow: 0 10px 25px rgba(0,0,0,0.08); width: 340px; 
+            border-top: 6px solid #e74c3c; position: sticky; top: 20px;
+        }
+
+        h2 { border-bottom: 3px solid #e74c3c; padding-bottom: 12px; font-size: 20px; color: #2c3e50; margin-top: 0; }
+        h3 { font-size: 18px; margin-bottom: 15px; color: #2c3e50; margin-top: 0; }
+        
+        table { border-collapse: collapse; width: 100%; }
+        th, td { 
+            padding: 12px 15px; text-align: left; 
+            border-bottom: 1.5px solid #bdc3c7; 
+            font-size: 13.5px; white-space: nowrap; 
+        }
+        
+        thead { background-color: #34495e; color: #ffffff; }
+        .group-end td { border-bottom: 4px solid #34495e !important; }
+        .name-cell { color: #2980b9; font-weight: 600; }
+        .date-cell { color: #e74c3c; font-family: 'Consolas', monospace; font-weight: bold; }
+
+        /* Form Stilleri */
+        .contact-form label { display: block; font-size: 12px; font-weight: bold; margin-bottom: 5px; color: #555; }
+        .contact-form input, .contact-form textarea {
+            width: 100%; padding: 12px; margin-bottom: 15px;
+            border: 1px solid #d1d8e0; border-radius: 6px; box-sizing: border-box; font-family: inherit; font-size: 13px;
+        }
+        .contact-form button {
+            width: 100%; padding: 14px; background-color: #e74c3c; color: white;
+            border: none; border-radius: 6px; cursor: pointer; font-weight: bold; transition: 0.3s;
+        }
+        .contact-form button:hover { background-color: #c0392b; }
+
+        @media (max-width: 1200px) { .main-layout { flex-direction: column; align-items: center; } .container { min-width: 100%; } .contact-panel { width: 100%; position: static; } }
+    </style>
+</head>
+<body>
+
+<div class="main-layout">
+    
+    <div class="container">
+        <h2>Sağlık Kurumları İşletmeciliği Dijital Okuryazarlık Dersi Sunum Programı</h2>
+        <div style="overflow-x: auto;">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Sunum Konu Başlığı</th>
+                        <th>Katılımcı Ad Soyad</th>
+                        <th>Tarih</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>Sağlık kurumlarında kriz yönetimi: Sosyal medyadaki dezenformasyonla mücadele</td><td class="name-cell">Helin Kaplan</td><td class="date-cell">11.03.2026</td></tr>
+                    <tr class="group-end"><td>E-devlet entegrasyonunun sağlık politikaları ve kamu yönetimi üzerindeki etkisi</td><td class="name-cell">Mehdi Kaçar</td><td class="date-cell">11.03.2026</td></tr>
+
+                    <tr><td>Yeşil Hastaneler: Sağlık veri merkezlerinin enerji tüketimi ve çevresel etkileri</td><td class="name-cell">Hasret Güler</td><td class="date-cell">18.03.2026</td></tr>
+                    <tr class="group-end"><td>Sağlık yöneticilerinde teknoloji odaklı tükenmişlik ve dijital yorgunluk yönetimi</td><td class="name-cell">Rabia Ezilmez</td><td class="date-cell">18.03.2026</td></tr>
+
+                    <tr><td>Dijitalleşmenin hasta-yönetici-hekim arasındaki yüz yüze iletişime etkileri</td><td class="name-cell">Şilan Gür</td><td class="date-cell">01.04.2026</td></tr>
+                    <tr class="group-end"><td>Sağlık hizmetlerinde dijital pazarlama stratejileri ve hasta memnuniyeti yönetimi</td><td class="name-cell">Beritan Acar</td><td class="date-cell">01.04.2026</td></tr>
+
+                    <tr><td>E-sağlık platformları (e-Nabız, MHRS) ve sağlık yönetiminde dijital araçlar</td><td class="name-cell">Seher Duman</td><td class="date-cell">08.04.2026</td></tr>
+                    <tr class="group-end"><td>Sağlık kurumlarında dijital etik kurallar, hasta hakları ve KVKK sorumlulukları</td><td class="name-cell">Ebrar Pekdoğan</td><td class="date-cell">08.04.2026</td></tr>
+
+                    <tr><td>Sağlık kurumlarında iş yeri siber zorbalığı ve önleme stratejileri</td><td class="name-cell">Selma Çitil</td><td class="date-cell">29.04.2026</td></tr>
+                    <tr class="group-end"><td>Hastane performans raporlarındaki yanıltıcı istatistiksel verileri fark etme yolları</td><td class="name-cell">Semra Çetin</td><td class="date-cell">29.04.2026</td></tr>
+
+                    <tr><td>Dijital hastane ortamında çalışan sağlığı ve ergonomik risklerin yönetimi</td><td class="name-cell">Arda Kaya</td><td class="date-cell">06.05.2026</td></tr>
+                    <tr class="group-end"><td>Hasta kayıtlarında dijital unutulma hakkı ve tıbbi geçmişin hukuki boyutu</td><td class="name-cell">Medine Büşra Özer</td><td class="date-cell">06.05.2026</td></tr>
+
+                    <tr><td>Mobil sağlık (m-Sağlık) uygulamaları ve geleceğin hastane yönetim teknolojileri</td><td class="name-cell">Merve Altuntepe</td><td class="date-cell">13.05.2026</td></tr>
+                    <tr class="group-end"><td>Sağlık reklamlarının hasta psikolojisi ve tedavi tercihleri üzerindeki etkisi</td><td class="name-cell">Rojin Alkan</td><td class="date-cell">13.05.2026</td></tr>
+
+                    <tr><td>Sağlık kurumlarında sosyal medya yönetimi ve hasta verilerinin gizliliği</td><td class="name-cell">Harun Baçaru</td><td class="date-cell">20.05.2026</td></tr>
+                    <tr><td>Hastane bilgi yönetim sistemlerinde (HBYS) açık kaynaklı yazılım kullanımı ve kültürü</td><td class="name-cell">Şahan Suvağci</td><td class="date-cell">20.05.2026</td></tr>
+                    <tr class="group-end"><td>Dijital sağlık savunuculuğu gruplarının sağlık politikaları üzerindeki etkisi</td><td class="name-cell">Nazlı Faruk</td><td class="date-cell">20.05.2026</td></tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <div class="contact-panel">
+        <h3>📩 Bir Sorun mu Var?</h3>
+        <p style="font-size: 13px; color: #666; margin-bottom: 20px;">
+            Sunumunuzla ilgili soru sormak için formu doldurun.
+        </p>
+        <form class="contact-form" action="https://formspree.io/f/mdalbyyj" method="POST">
+            <label>Adınız Soyadınız</label>
+            <input type="text" name="name" placeholder="" required>
+            
+            <label>Bölümünüz</label>
+            <input type="text" name="department" placeholder="" required>
+            
+            <label>E-posta Adresiniz</label>
+            <input type="email" name="email" placeholder="" required>
+            
+            <label>Mesajınız</label>
+            <textarea name="message" rows="5" placeholder="Sorunuzu detaylı bir şekilde yazın..." required></textarea>
+            
+            <button type="submit">Mesajı Gönder</button>
+        </form>
+    </div>
+
+</div>
+
+</body>
+</html>
